@@ -18,16 +18,15 @@ namespace MobileSaleTestProj
         {
             // Arrange
             var dbContext = DbContextMocker.GetDbContext(nameof(TestMobileSalesAsync));
-           var repository = new MobileRepository(dbContext);
-
+            var repository = new MobileRepository(dbContext);
             // Act
-            var response = (repository.GetMobileSaleDetailsData(DateTime.Now,DateTime.Now));
-            var value = response.ToList().Count>0;
-
+            var response = (repository.GetMobileSaleDetailsData(DateTime.Now, DateTime.Now));
             dbContext.Dispose();
-
             // Assert
-            Assert.True(value);
+            foreach (var value in response)
+            {
+                Assert.Equal(62029, value.ProfitLoss);
+            }
         }
         [Fact]
         public async Task TestBrandSpecificMobileSalesAsync()
@@ -38,12 +37,12 @@ namespace MobileSaleTestProj
 
             // Act
             var response = (repository.GetBrandWiseMobileSalesDetailsData(DateTime.Now, DateTime.Now));
-            var value = response.ToList().Count > 0;
-
             dbContext.Dispose();
-
             // Assert
-            Assert.True(value);
+            foreach (var value in response)
+            {
+                Assert.Equal(6229, value.ProfitLoss);
+            }
         }
         [Fact]
         public async Task TestMobileComparisonSalesAsync()
@@ -54,12 +53,12 @@ namespace MobileSaleTestProj
 
             // Act
             var response = (repository.GetMobileComparisonSalesDetailsData(DateTime.Now, DateTime.Now));
-            var value = response.ToList().Count > 0;
-
             dbContext.Dispose();
-
             // Assert
-            Assert.True(value);
+            foreach (var value in response)
+            {
+                Assert.Equal(Convert.ToDecimal(4330.00), value.CurrentProfitLoss);
+            }
         }
     }
 }
