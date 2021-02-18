@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileSalesApplication", "MobileSalesApplication\MobileSalesApplication.csproj", "{1E4C3062-2C8C-453E-BDBD-91FA01C66109}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MobileSalesApplication", "MobileSalesApplication\MobileSalesApplication.csproj", "{1E4C3062-2C8C-453E-BDBD-91FA01C66109}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileSalesApplication.Data", "MobileSalesApplication.Data\MobileSalesApplication.Data.csproj", "{0DED1254-96E9-4ECF-9160-4EB1D7BA1E45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MobileSalesApplication.Data", "MobileSalesApplication.Data\MobileSalesApplication.Data.csproj", "{0DED1254-96E9-4ECF-9160-4EB1D7BA1E45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileSalesApplication.Repository", "MobileSalesApplication.Repository\MobileSalesApplication.Repository.csproj", "{28C393B3-7421-44C8-B925-1BD0B1C567B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MobileSalesApplication.Repository", "MobileSalesApplication.Repository\MobileSalesApplication.Repository.csproj", "{28C393B3-7421-44C8-B925-1BD0B1C567B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileSaleTestProj", "MobileSaleTestProj\MobileSaleTestProj.csproj", "{EE1459E0-74DC-43A3-936A-5CF75F239596}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{28C393B3-7421-44C8-B925-1BD0B1C567B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28C393B3-7421-44C8-B925-1BD0B1C567B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28C393B3-7421-44C8-B925-1BD0B1C567B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE1459E0-74DC-43A3-936A-5CF75F239596}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE1459E0-74DC-43A3-936A-5CF75F239596}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE1459E0-74DC-43A3-936A-5CF75F239596}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE1459E0-74DC-43A3-936A-5CF75F239596}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
